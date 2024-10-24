@@ -1,0 +1,126 @@
+
+
+
+.image-box {
+    position: relative;
+    float: left;
+}
+
+.image-box .hover_img {
+    position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.image-box:hover .hover_img {
+    display: block;
+}
+
+.markdownsheading {
+	font-family: "Merienda", cursive;
+}
+
+.shopheading {
+	font-family: "Merienda", cursive;
+}
+
+.shoproomheading {
+	font-family: "Merienda", cursive;
+}
+
+.furnitureheading {
+	font-family: "Philosopher", sans-serif;
+}
+
+.recentlyheading {
+	font-family: "Merienda", cursive;
+}
+
+.responsive {
+	font-family: "Philosopher", sans-serif;
+}
+
+.trending {
+	font-family: "Philosopher", sans-serif;
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	transition: 0.75s ease;
+}
+
+body {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	gap: 4rem;
+	background: white;
+	color:black;
+}
+#grid {
+	width: calc(100% - 20vmin);
+	aspect-ratio: 16 / 7;
+	background: linen;
+	display: grid;
+	grid-template-columns: 1fr 0fr 1fr;
+	place-items: center;
+	outline: 2px solid #804a00;
+	border-radius: 5vmin;
+	box-shadow: 0 1rem 2rem -1rem rgba(68 50 4 / 1);
+	overflow: hidden;
+ 	margin: 0 auto;
+}
+.left,
+.right,
+.middle {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	transform-origin: center;
+}
+.left {
+	background-image: url("./images/home-decor1.webp");
+	border-right: 1px solid #804a00;
+}
+.middle {
+	font-size: 0rem;
+	background-image: url("./images/home-decor-full000.webp");
+}
+.right {
+	background-image: url("./images/home-decorfull2.jpg");
+	border-left: 1px solid #804a00;
+}
+
+#grid:hover {
+	grid-template-columns: 0fr 1fr 0fr;
+}
+
+
+body .slider-container.first-sample {
+	width: 700px !important;
+	height: 400px;
+	border: 5px solid #1c1c1c;
+	border-radius: 3px;
+	margin: 0 auto 50px;
+	position: relative;
+}
+
+
+
+@media only screen and (max-width:600px) {
+
+	body .slider-container.first-sample {
+		width: 380px !important;
+		height: 400px;
+		border: 5px solid #1c1c1c;
+		border-radius: 3px;
+		margin: 0 auto 50px;
+		position: relative;
+	}
+
+}
