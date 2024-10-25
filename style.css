@@ -58,7 +58,7 @@ body {
 	display: grid;
 	place-items: center;
 	gap: 4rem;
-	background: white;
+	background: white !important;
 	color:black;
 }
 #grid {
