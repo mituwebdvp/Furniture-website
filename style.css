@@ -112,6 +112,20 @@ body .slider-container.first-sample {
 
 
 
+										/* product image hover zoom */
+
+
+.productheading {
+	font-family: "Merienda", cursive;
+}
+
+
+.productimage:hover .hoverimage {
+	transform: scale(1.2);
+}
+
+
+
 @media only screen and (max-width:600px) {
 
 	body .slider-container.first-sample {
