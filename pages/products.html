@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="../library/aos/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../library/slick/slick.css"/>
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="../library/slick/slick-theme.css"/>
   
   <link rel="stylesheet" href="./library/blue-slider-jQuery-multiple-image-carousel-slider/blue-slider-jQuery-multiple-image-carousel-slider/css/style.min.css">
   <link rel="stylesheet" href="./library/blue-slider-jQuery-multiple-image-carousel-slider/blue-slider-jQuery-multiple-image-carousel-slider/css/fontello.css">
@@ -85,6 +88,16 @@
         </header>
 
 
+                                <!-- slider section -->
+
+        <section class="container mx-auto mt-28">
+            <div class="slidersection">
+                <div><img src="../images/product/product-slider/istockphoto-943910360-612x612.jpg" class="w-full md:w-[800px] h-[400px]" alt=""></div>
+                <div><img src="../images/product/product-slider/image2.avif" class="w-full md:md:w-[800px] h-[400px]" alt=""></div>
+                <div><img src="../images/product/product-slider/image3.webp" class="w-full md:md:w-[800px] h-[400px]" alt=""></div>
+                <div><img src="../images/product/product-slider/image4.avif" class="w-full md:md:w-[800px] h-[400px]" alt=""></div>
+            </div>
+        </section>
 
                             <!-- product prising section -->
 
@@ -478,6 +491,22 @@
         <script>
         AOS.init();
         </script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../library/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.slidersection').slick({
+            autoplay:true,
+            autoplaySpeed:3000,
+            slidesToShow:2,
+            slidesToScroll:1,
+        });
+        });
+    </script>
+				
 </body>
 
 </html>
