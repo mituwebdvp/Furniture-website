@@ -111,6 +111,11 @@ body .slider-container.first-sample {
 }
 
 
+.recentimage:hover .hoverimg {
+	transform: scale(1.2);
+}
+
+
 
 										/* product image hover zoom */
 
