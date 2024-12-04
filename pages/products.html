@@ -90,19 +90,19 @@
 
                                 <!-- slider section -->
 
-        <section class="container mx-auto mt-28">
+        <section class="container mx-auto mt-28 hidden md:block">
             <div class="slidersection">
-                <div><img src="../images/product/product-slider/istockphoto-943910360-612x612.jpg" class="w-[200px] md:w-[800px] h-[400px]" alt=""></div>
-                <div><img src="../images/product/product-slider/image2.avif" class="w-[200px] md:md:w-[800px] h-[400px]" alt=""></div>
-                <div><img src="../images/product/product-slider/image3.webp" class="w-[200px] md:md:w-[800px] h-[400px]" alt=""></div>
-                <div><img src="../images/product/product-slider/image4.avif" class="w-[200px] md:md:w-[800px] h-[400px]" alt=""></div>
+                <div><img src="../images/product/product-slider/istockphoto-943910360-612x612.jpg" class="w-[800px] h-[400px] p-x-4" alt=""></div>
+                <div><img src="../images/product/product-slider/image2.avif" class="w-[800px] h-[400px] p-x-4" alt=""></div>
+                <div><img src="../images/product/product-slider/image3.webp" class="w-[800px] h-[400px] p-x-4" alt=""></div>
+                <div><img src="../images/product/product-slider/image4.avif" class="w-[800px] h-[400px] p-x-4" alt=""></div>
             </div>
         </section>
 
                             <!-- product prising section -->
 
         <section class="container mx-auto mt-28">
-            <h1 class="text-4xl font-semibold leading-8 text-center p-5 mb-10 productheading">Most Demandable Products Items</h1>
+            <h1 class="text-4xl font-semibold leading-10 text-center p-5 mb-10 productheading">Most Demandable Products Items</h1>
             <div class="grid grid-cols-1 md:grid-cols-4 justify-items-center gap-y-10">
                 <div class="w-[350px] card rounded-xl overflow-hidden shadow-xl border border-gray-300 bg-[#f5f5f5] productimage">
                     <div class="relative cursor-pointer overflow-hidden">
@@ -496,30 +496,19 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="../library/slick/slick.min.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            $('.slidersection').slick({
-                centerMode: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  dots: true,
-  infinite: true,
-  cssEase: 'linear',
-  mobileFirst: true, //optional, to be used only if your page is mobile first
-  responsive: [{
-    breakpoint: 1024,
-    settings: {
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      centerMode: false,
-    }
-  }]
-    
-});
-
-		
+   <script>
+     $(document).ready(function(){
+        $('.slidersection').slick({
+            autoplay:true,
+            autoplaySpeed:3000,
+            focusOnSelect:true,
+            slidesToShow:2,
+            slidesToScroll:1,
+            dots:true,
         });
-    </script>
+      });
+   </script>
+          
 				
 </body>
 
